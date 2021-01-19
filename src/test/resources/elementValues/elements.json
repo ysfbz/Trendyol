@@ -1,0 +1,40 @@
+[
+  {
+    "key": "reklamKapatma",
+    "value": "/html/body/div[6]/div/div/a",
+    "type": "xpath"
+  },{
+  "key": "aramaButon",
+  "value": "//*[@id=\"auto-complete-app\"]/div/div/i",
+  "type": "xpath"
+},
+  {
+    "key": "aramaText",
+    "value": "//*[@id=\"auto-complete-app\"]/div/div/input",
+    "type": "xpath"
+  },
+  {
+    "key": "girisMenu",
+    "value": "//*[@id=\"account-navigation-container\"]/div/div[1]/div[1]/i[2]",
+    "type": "xpath"},
+  {
+    "key": "hesabimMenü",
+    "value": "//*[@id=\"account-navigation-container\"]/div/div[1]/div[1]/i[2]",
+    "type": "xpath"},
+  {
+    "key": "email",
+    "value": "login-email",
+    "type": "id"},
+  {
+    "key": "sifre",
+    "value": "login-password-input",
+    "type": "id"},
+  {
+    "key": "girisYapButon",
+    "value": "//*[@id=\"login-register\"]/div[3]/div[1]/form/button/span",
+    "type": "xpath"},
+  {
+    "key": "hesabimIsim",
+    "value": "//*[@id=\"account-navigation-container\"]/div/div[1]/div[2]/div/p",
+    "type": "xpath"}
+]
