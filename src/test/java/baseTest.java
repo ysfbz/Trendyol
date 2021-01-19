@@ -14,7 +14,7 @@ public class baseTest {
 
     static WebDriver driver;
     static String expectedTitle = "En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da";
-    static String expectedLoginTitle = "Üye Giriş Sayfası & Üye Ol - Hepsiburada";
+    static String expectedLoginTitle = "";
     static String actualTitle;
 
     public static void getUrl(){
