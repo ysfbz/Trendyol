@@ -24,3 +24,18 @@
 *"hesabimMenü" hesabim üzerine gel bekle
 *"2" saniye bekle
 *"hesabimIsim" ile <username> isim kontrol
+
+
+#Urun ekleme
+*"uruneTikla" ilk urune tikla "0"
+*"2" saniye bekle
+*"sepeteEkle" elementi var mi
+*"2" saniye bekle
+*"sepeteEkle" tikla
+*"3" saniye bekle
+*"sepeteBas" tikla
+*"2" saniye bekle
+*"silTusu" tikla
+*"1" saniye bekle
+*"silOnayla" tikla
+*"1" saniye bekle

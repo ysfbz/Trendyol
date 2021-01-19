@@ -1,18 +1,19 @@
 import com.thoughtworks.gauge.Step;
+import org.junit.Assert;
 
 public class anasayfa extends baseTest {
 
 
     @Step("Anasayfaya gider")
-    public void anaSayfayaGit() throws InterruptedException{
+    public void anaSayfayaGit() throws InterruptedException {
         getUrl();
         System.out.println("Anasayfa yuklendi");
     }
 
     @Step("<saniye> saniye bekle")
     public void waitElement(int key) throws InterruptedException {
-        Thread.sleep(key*1000);
-        System.out.println(key+" saniye beklendi");
+        Thread.sleep(key * 1000);
+        System.out.println(key + " saniye beklendi");
     }
 
 
@@ -36,9 +37,9 @@ public class anasayfa extends baseTest {
 
 
     @Step("<hesabimIsim> ile <username> isim kontrol")
-    public void implementation4(String isim,String name) {
+    public void implementation4(String isim, String name) {
 
-        assertControl(isim,name);
+        assertControl(isim, name);
         System.out.println("isim dogru");
     }
 
@@ -48,5 +49,21 @@ public class anasayfa extends baseTest {
         hoverElement(hesabimHover);
         System.out.println("Hovera geldi");
     }
-}
 
+    @Step("<urun> ilk urune tikla <index>")
+    public void uruneTiklat(String urun, int index) {
+        clickListElement(urun, index);
+
+    }
+
+    @Step("<key> elementi var mi")
+    public void checkElement(String key) {
+        try {
+            findElement(key);
+        } catch (Exception e) {
+            Assert.fail("Element bulunamadı.");
+        }
+    }
+
+
+    }

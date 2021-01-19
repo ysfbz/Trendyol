@@ -1,5 +1,6 @@
 import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.BeforeScenario;
+import com.thoughtworks.gauge.Step;
 import helper.ElementHelper;
 import helper.StoreHelper;
 import model.ElementInfo;
@@ -13,6 +14,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class baseTest {
     @BeforeScenario
     public void hazirlik() {
@@ -25,9 +28,7 @@ public class baseTest {
 
     static WebDriver driver;
     static Actions action;
-    static String expectedTitle = "En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da";
-    static String expectedLoginTitle = "";
-    static String actualTitle;
+
 
     public static void getUrl(){
         driver.get("https://www.trendyol.com");
@@ -43,6 +44,12 @@ public class baseTest {
                 "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})",
                 webElement);
         return webElement;
+    }
+
+    public List<WebElement> findElements(String key){
+        ElementInfo elementInfo = StoreHelper.INSTANCE.findElementInfoByKey(key);
+        By infoParam = ElementHelper.getElementInfoToBy(elementInfo);
+        return driver.findElements(infoParam);
     }
 
     public void hoverElement(String by) {
@@ -62,6 +69,11 @@ public class baseTest {
     public void clickElement(String by){
         findElement(by).click();
     }
+    public void clickListElement(String by, int index){
+        findElements(by).get(index).click();
+    }
+
+
 
 
 

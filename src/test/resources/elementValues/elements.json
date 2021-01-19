@@ -34,6 +34,31 @@
     "value": "//*[@id=\"login-register\"]/div[3]/div[1]/form/button/span",
     "type": "xpath"},
   {
+    "key": "uruneTikla",
+    "value": "//div[@class='prdct-desc-cntnr']",
+    "type": "xpath"
+  },
+  {
+    "key":"sepeteEkle",
+    "value": "//div[@class='add-to-bs-wrp']",
+    "type": "xpath"
+  },
+  {
+    "key": "sepeteBas",
+    "value": "//a[@class='link account-basket']",
+    "type": "xpath"
+  },
+  {
+    "key": "silTusu",
+    "value": "//i[@class='i-trash']",
+    "type": "xpath"
+  },
+  {
+    "key": "silOnayla",
+    "value": "//button[@class='btn-item btn-remove']",
+    "type": "xpath"
+  },
+  {
     "key": "hesabimIsim",
     "value": "//*[@id=\"account-navigation-container\"]/div/div[1]/div[2]/div/p",
     "type": "xpath"}

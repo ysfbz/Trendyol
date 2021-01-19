@@ -8,3 +8,4 @@ Arama senaryosu
 *<email> ile <sifre> Kullanici Girisi
 *<username> kontrol
 *Arama yap
+*Urun ekleme
