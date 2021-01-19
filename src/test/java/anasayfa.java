@@ -3,7 +3,7 @@ import com.thoughtworks.gauge.Step;
 public class anasayfa extends baseTest {
 
 
-    @Step("Anasayfaya git")
+    @Step("Anasayfaya gider")
     public void anaSayfayaGit() throws InterruptedException{
         getUrl();
         System.out.println("Anasayfa yuklendi");
